@@ -150,6 +150,8 @@ namespace Final
 
 
             Console.Write("\npress enter to exit");
+
+            Console.WriteLine("test");
             Console.ReadLine();
         }
     }

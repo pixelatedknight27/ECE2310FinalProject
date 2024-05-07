@@ -18,6 +18,7 @@ namespace Final
 
         public Temperature(double? degree, string scale)
         {
+            //Temperature Final
             // to be implimented
         }
 

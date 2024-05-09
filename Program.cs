@@ -40,21 +40,19 @@ namespace Final
             // initialize each pool with a location and an unititialized temp
             // initialize the HashSet of unvisited pools
 
-            int count = 0;
+            int itr = 0;
 
             // O(n)
             foreach (Location location in locations)
             {
 
                 // spaghetti? i think not.
-                pools.Add(new Pool(
-                    count: count,
-                    location: location
-                ));
+                Pool pool = new Pool(location: location);
+                pools.Add(pool);
 
-                unvisited.Add(count);
+                unvisited.Add(itr);
 
-                count++;
+                itr++;
 
             }
 
@@ -70,7 +68,7 @@ namespace Final
             // will only iterate for however many pools are in the list
 
             // O(n)
-            for (int i = 0; i < pools.Count; ++i)
+            for (int i = 0; i < Pool.count; ++i)
             {
                 double minDist = double.PositiveInfinity;
                 int minDistIndex = -1;

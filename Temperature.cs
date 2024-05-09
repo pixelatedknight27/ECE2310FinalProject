@@ -16,7 +16,7 @@ namespace Final
         public string Scale { get { return _scale; } set { _scale = value; } }
 
 
-        public Temperature(double? degree, string scale)
+        public Temperature(double? degree = null, string scale = null)
         {
             // to be implimented
         }

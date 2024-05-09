@@ -16,16 +16,15 @@ namespace Final
         public Location Location { get { return _location; } set { _location = value; } }
 
 
-        private int _count;
-        public int Count { get { return _count; } set { _count = value; } }
-
+        public static int count = 0;
 
         public Pool(int count = 0, Temperature temp = null, Location location = null)
         {
             // to be implimented
-            // - if temp is null, initialize new Temperature(double.NAN, "F")
+            // - if temp is null, initialize new Temperature(double.NaN, "F")
             // - call this.toString()
 
+            Pool.count++;
         }
 
         public new string ToString()

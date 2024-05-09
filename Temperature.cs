@@ -15,10 +15,15 @@ namespace Final
         private string _scale;
         public string Scale { get { return _scale; } set { _scale = value; } }
 
-
+        public Temperature()
+        {
+            _degree = 0;
+            _scale = null;
+        }
         public Temperature(double? degree, string scale)
         {
-            //Temperature Final
+            _degree = degree;
+            _scale = scale;
             // to be implimented
         }
 
@@ -28,5 +33,6 @@ namespace Final
             string myString = "";
             return (myString);
         }
+        ~Temperature() { }
     }
 }

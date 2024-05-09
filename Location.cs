@@ -19,8 +19,11 @@ namespace Final
 
         public Location(int x, int y)
         {
+            _x = x;
+            _y = y;
             // to be implimented
         }
+        
 
         public new string ToString()
         {
@@ -28,5 +31,6 @@ namespace Final
             string myString = "";
             return (myString);
         }
+        ~Location() { }
     }
 }

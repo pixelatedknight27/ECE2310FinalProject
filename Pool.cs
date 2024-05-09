@@ -43,5 +43,6 @@ namespace Final
             double distance = 0;
             return (distance);
         }
+        ~Pool() { }
     }
 }

@@ -17,15 +17,28 @@ namespace Final
         public int Y { get { return _y; } set { _y = value; } }
 
 
+        public Location()
+        {
+            _x = 0;
+            _y = 0
+        }
         public Location(int x, int y)
         {
-            // to be implimented
+            _x = x;
+            _y = y;
+        }
+
+        public double FindDistance(int x1, int y1, int x2, int y2)
+        {
+            double d = (y2 - y1) / (x2 - x1);
+            return d;
         }
 
         public new string ToString()
         {
             // to be implimented
-            string myString = "";
+            string myString = "Pool" + //name?/letter?
+                                     + "is located at" + "("+_x+","+_y+")");
             return (myString);
         }
     }

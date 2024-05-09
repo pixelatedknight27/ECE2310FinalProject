@@ -20,7 +20,7 @@ namespace Final
         public Location()
         {
             _x = 0;
-            _y = 0
+            _y = 0;
         }
         public Location(int x, int y)
         {
@@ -38,7 +38,7 @@ namespace Final
         {
             // to be implimented
             string myString = "Pool" + //name?/letter?
-                                     + "is located at" + "("+_x+","+_y+")");
+                                     "is located at" + "("+_x+","+_y+")");
             return (myString);
         }
     }

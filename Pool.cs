@@ -30,6 +30,9 @@ namespace Final
         public new string ToString()
         {
             // to be implimented
+            // format example:
+            // "pool at location (2, 7) at temperature 23 °F"
+            // call _location.toString and _temp.toString
             string myString = "";
             return myString;
         }

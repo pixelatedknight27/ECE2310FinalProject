@@ -148,9 +148,6 @@ namespace Final
 
 
             Console.Write("\npress enter to exit");
-
-            Console.WriteLine("test");
-            Console.WriteLine("test2");
             Console.ReadLine();
         }
     }

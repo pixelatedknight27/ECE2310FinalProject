@@ -28,7 +28,7 @@ namespace Final
         public new string ToString()
         {
             // to be implimented
-            string myString = "";
+            string myString = "pool location at (" + _x + ", " + _y + ") in the xy grid";
             return (myString);
         }
         ~Location() { }

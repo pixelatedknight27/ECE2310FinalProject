@@ -27,7 +27,7 @@ namespace Final
         public new string ToString()
         {
             // to be implimented
-            string myString = "The temperature in degrees are " + _degree + " with the " + _scale + " scale";
+            string myString = "temperature of " + _degree + " °" + _scale;
             return (myString);
         }
         ~Temperature() { }

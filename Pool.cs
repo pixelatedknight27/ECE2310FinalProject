@@ -30,7 +30,7 @@ namespace Final
         public new string ToString()
         {
             // to be implimented
-            string myString = "";
+            string myString = "The " + _location.ToString() + " has a " + _temp.ToString();
             return myString;
         }
 

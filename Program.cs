@@ -68,7 +68,7 @@ namespace Final
             // will only iterate for however many pools are in the list
 
             // O(n)
-            for (int i = 0; i < Pool.count; ++i)
+            for (int i = 0; i < Pool.count-1; ++i)
             {
                 double minDist = double.PositiveInfinity;
                 int minDistIndex = -1;
@@ -94,8 +94,6 @@ namespace Final
                 // update it's temperature
                 double temp = rnd.Next(98, 105);
 
-
-                Console.WriteLine(minDistIndex);
                 pools[minDistIndex].Temp = new Temperature(temp, "F");
 
                 Console.WriteLine("visited " + pools[minDistIndex].ToString());

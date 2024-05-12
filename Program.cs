@@ -40,6 +40,8 @@ namespace Final
             // initialize each pool with a location and an unititialized temp
             // initialize the HashSet of unvisited pools
 
+            Console.WriteLine("initializing pools:");
+
             int itr = 0;
 
             // O(n)
@@ -61,9 +63,12 @@ namespace Final
             // where the fun begins
 
             Pool currentPool = new Pool(location : new Location(0,0));
+            Console.WriteLine("this pool was initialized for the starting location\nof (0,0) and is not included in the pools list\n");
 
             Random rnd = new Random();
 
+
+            Console.WriteLine("performing pool maintainance:");
 
             // will only iterate for however many pools are in the list
 
@@ -118,6 +123,8 @@ namespace Final
             Console.WriteLine();
 
             // making sure all pools in the list have maintained their temperature
+
+            Console.WriteLine("iterating through list of pools:");
 
             foreach (Pool pool in pools)
             {

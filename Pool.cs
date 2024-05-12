@@ -20,9 +20,9 @@ namespace Final
 
         public Pool(Temperature temp = null, Location location = null)
         {
-            Temperature = temp ?? new Temperature(double.NaN, "F");
-            Location = location ?? new Location();
-            Console.WriteLine("Initialized: {this}"); 
+            _temp = temp ?? new Temperature(double.NaN, "F");
+            _location = location ?? new Location();
+            Console.WriteLine("initialized " + this.ToString()); 
             Pool.count++;
         }
 
@@ -33,7 +33,7 @@ namespace Final
             // "pool at location (2, 7) at temperature 23 °F"
             // call this._location.toString and this._temp.toString
 
-            string myString = "The " + _location.ToString() + " has a " + _temp.ToString();
+            string myString = "pool at " + _location.ToString() + " with " + _temp.ToString();
             return myString;
         }
 

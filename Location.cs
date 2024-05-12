@@ -21,6 +21,7 @@ namespace Final
             _x = x;
             _y = y;
         }
+        
 
         public new string ToString()
         {
@@ -28,11 +29,10 @@ namespace Final
             // format example:
             // "(5, 20)"
 
-            // will be called by pool.toString
-            string myString = "Pool"; //name?/letter?
-                                     // commened out because threw an error
-                                     // "is located at" + "("+_x+","+_y+")");
+            string myString = "pool location at (" + _x + ", " + _y + ") in the xy grid";
+
             return (myString);
         }
+        ~Location() { }
     }
 }

@@ -35,7 +35,8 @@ namespace Final
             // format example:
             // "pool at location (2, 7) at temperature 23 °F"
             // call this._location.toString and this._temp.toString
-            string myString = "";
+
+            string myString = "The " + _location.ToString() + " has a " + _temp.ToString();
             return myString;
         }
 
@@ -47,5 +48,7 @@ namespace Final
             double distance = 0;
             return (distance);
         }
+
+        ~Pool() { }
     }
 }

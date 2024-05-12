@@ -17,8 +17,10 @@ namespace Final
 
 
         public Temperature(double? degree = null, string scale = null)
+
         {
-            // to be implimented
+            _degree = degree;
+            _scale = scale;
         }
 
         public new string ToString()
@@ -26,8 +28,10 @@ namespace Final
             // to be implimented
             // format example:
             // "23 °F"
-            string myString = "";
+
+            string myString = "temperature of " + _degree + " °" + _scale;
             return (myString);
         }
+        ~Temperature() { }
     }
 }

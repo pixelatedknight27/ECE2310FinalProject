@@ -25,7 +25,7 @@ namespace Final
 
         public new string ToString()
         {
-            // to be implimented
+  
             // format example:
             // "23 °F"
 

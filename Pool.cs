@@ -18,11 +18,12 @@ namespace Final
 
         public static int count = 0;
 
-        public Pool(int count = 0, Temperature temp = null, Location location = null)
+        public Pool(Temperature temp = null, Location location = null)
         {
             // to be implimented
             // - if temp is null, initialize new Temperature(double.NaN, "F")
-            // - call this.toString()
+            // - print in console to inform of initialization. Call this.ToString()
+            //   - something like "initialized " + this.ToString()
 
             Pool.count++;
         }
@@ -32,7 +33,7 @@ namespace Final
             // to be implimented
             // format example:
             // "pool at location (2, 7) at temperature 23 °F"
-            // call _location.toString and _temp.toString
+            // call this._location.toString and this._temp.toString
             string myString = "";
             return myString;
         }

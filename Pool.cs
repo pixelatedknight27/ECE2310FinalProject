@@ -20,12 +20,9 @@ namespace Final
 
         public Pool(Temperature temp = null, Location location = null)
         {
-            // to be implimented
-            // - if temp is null, initialize new Temperature(double.NaN, "F")
-            // - if location is null, initialize new Location()
-            // - print in console to inform of initialization. Call this.ToString()
-            //   - something like "initialized " + this.ToString()
-            
+            Temperature = temp ?? new Temperature(double.NaN, "F");
+            Location = location ?? new Location();
+            Console.WriteLine("Initialized: {this}"); 
             Pool.count++;
         }
 

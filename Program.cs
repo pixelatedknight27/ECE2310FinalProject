@@ -60,7 +60,7 @@ namespace Final
 
             // where the fun begins
 
-            Pool currentPool = new Pool();
+            Pool currentPool = new Pool(location : new Location(0,0));
 
             Random rnd = new Random();
 

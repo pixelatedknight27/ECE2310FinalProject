@@ -9,14 +9,14 @@ namespace Final
 {
     internal class Location
     {
-        private int _x;
-        public int X { get { return _x; } set { _x = value; } }
+        private double? _x;
+        public double? X { get { return _x; } set { _x = value; } }
 
         
-        private int _y;
-        public int Y { get { return _y; } set { _y = value; } }
+        private double? _y;
+        public double? Y { get { return _y; } set { _y = value; } }
 
-        public Location(int x = 0, int y = 0)
+        public Location(double? x = null, double? y = null)
         {
             _x = x;
             _y = y;

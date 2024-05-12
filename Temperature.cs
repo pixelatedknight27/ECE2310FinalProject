@@ -29,7 +29,7 @@ namespace Final
             // format example:
             // "23 °F"
 
-            string myString = "temperature of " + _degree + " °" + _scale;
+            string myString = _degree + " °" + _scale;
             return (myString);
         }
         ~Temperature() { }

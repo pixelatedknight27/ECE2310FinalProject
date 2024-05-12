@@ -36,7 +36,7 @@ namespace Final
             // "pool at location (2, 7) at temperature 23 °F"
             // call this._location.toString and this._temp.toString
 
-            string myString = "The " + _location.ToString() + " has a " + _temp.ToString();
+            string myString = "The pool location is at " + _location.ToString() + " has a temperature of " + _temp.ToString();
             return myString;
         }
 

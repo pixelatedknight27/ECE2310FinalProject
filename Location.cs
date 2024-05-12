@@ -29,7 +29,7 @@ namespace Final
             // format example:
             // "(5, 20)"
 
-            string myString = "pool location at (" + _x + ", " + _y + ") in the xy grid";
+            string myString = "(" + _x + ", " + _y + ") in the xy grid";
 
             return (myString);
         }

@@ -25,7 +25,7 @@ namespace Final
             // - if location is null, initialize new Location()
             // - print in console to inform of initialization. Call this.ToString()
             //   - something like "initialized " + this.ToString()
-
+            
             Pool.count++;
         }
 

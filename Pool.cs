@@ -22,6 +22,7 @@ namespace Final
         {
             // to be implimented
             // - if temp is null, initialize new Temperature(double.NaN, "F")
+            // - if location is null, initialize new Location()
             // - print in console to inform of initialization. Call this.ToString()
             //   - something like "initialized " + this.ToString()
 
@@ -38,7 +39,7 @@ namespace Final
             return myString;
         }
 
-        public double FindDistance(Location location)
+        public double FindDistance(Pool pool)
         {
             // to be implimented
             // use this._location as reference

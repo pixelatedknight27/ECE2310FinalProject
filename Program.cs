@@ -60,7 +60,7 @@ namespace Final
 
             // where the fun begins
 
-            Location currentLocation = new Location(0, 0);
+            Pool currentPool = new Pool();
 
             Random rnd = new Random();
 
@@ -78,7 +78,7 @@ namespace Final
                 // O(n)*
                 foreach (int poolIndex in unvisited)
                 {
-                    double dist = pools[poolIndex].FindDistance(currentLocation);
+                    double dist = pools[poolIndex].FindDistance(currentPool);
 
                     if (dist < minDist)
                     {
@@ -94,6 +94,8 @@ namespace Final
                 // update it's temperature
                 double temp = rnd.Next(98, 105);
 
+
+                Console.WriteLine(minDistIndex);
                 pools[minDistIndex].Temp = new Temperature(temp, "F");
 
                 Console.WriteLine("visited " + pools[minDistIndex].ToString());
@@ -111,7 +113,7 @@ namespace Final
 
                 // update the location of the current pool to the nearest pool
 
-                currentLocation = pools[(int)minDistIndex].Location;
+                currentPool = pools[(int)minDistIndex];
 
             }
 

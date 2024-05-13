@@ -153,7 +153,6 @@ namespace Final
 
             // technically the same O time complexity as list approach to store unvisited pools, but it's not the optimal solution.
 
-
             Console.Write("\npress enter to exit");
             Console.ReadLine();
         }

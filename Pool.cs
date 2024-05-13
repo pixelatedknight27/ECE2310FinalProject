@@ -41,8 +41,9 @@ namespace Final
         {
             // to be implimented
             // use this._location as reference
-
-            double distance = 0;
+            double distx = Convert.ToDouble(this._location.X - pool.Location.X);
+            double disty = Convert.ToDouble(this._location.Y - pool.Location.X);
+            double distance = Math.Sqrt(Math.Pow(distx, 2) + Math.Pow(disty, 2));
             return (distance);
         }
 

@@ -28,19 +28,12 @@ namespace Final
 
         public new string ToString()
         {
-
-            // format example:
-            // "pool at location (2, 7) at temperature 23 °F"
-            // call this._location.toString and this._temp.toString
-
             string myString = "pool at " + _location.ToString() + " with " + _temp.ToString();
             return myString;
         }
 
         public double FindDistance(Pool pool)
         {
-            // to be implimented
-            // use this._location as reference
             double distx = Convert.ToDouble(this._location.X - pool.Location.X);
             double disty = Convert.ToDouble(this._location.Y - pool.Location.X);
             double distance = Math.Sqrt(Math.Pow(distx, 2) + Math.Pow(disty, 2));

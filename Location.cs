@@ -25,12 +25,7 @@ namespace Final
 
         public new string ToString()
         {
-
-            // format example:
-            // "(5, 20)"
-
             string myString = "location (" + _x + ", " + _y + ") in the xy grid";
-
             return (myString);
         }
         ~Location() { }

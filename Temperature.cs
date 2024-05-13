@@ -25,10 +25,6 @@ namespace Final
 
         public new string ToString()
         {
-  
-            // format example:
-            // "23 °F"
-
             string myString = "temperature of " + _degree + " °" + _scale;
             return (myString);
         }
